@@ -40,7 +40,9 @@ table
     tr
       td Body 1
       td Body 2
+```
 ### Input 2 (Less space per indent)
+```text
 table
  thead
   tr
@@ -50,7 +52,7 @@ table
   tr
    td Body 1
    td Body 2
-
+```
 ## Output
 The output should yield similar result, for the function uses the number of spaces to determine the level of the element in the nest.
 
