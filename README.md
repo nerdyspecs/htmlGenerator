@@ -59,25 +59,32 @@ The output should yield similar result, for the function uses the number of spac
 ## Limitations
 This function is limited to a simple format where by the elements are by "tags content". This would result in a breakage when the in put is as below, as the function expects any content to be behind of a tag.:
 ### Limitation 1
+``` text
 tr
   td
     Content1
+```
 ### Output 1
+``` text
 <tr>
   <td>
     <Content1>
     </Content1>
   </td>
 </td>
-
+```
 Besides that, there is no validation of tags. The function only treats any line of input, whereby after split by an empty space, the first position is the tag, and the remainding is the content. There is no validation for any typos in tags.
+
 ### Limitation 2
+```text
 tr
  tb Content1
+```
 ### Output 1
+```text
 <tr>
   <tb>
     Content1
   </tb>
 <tr>
-
+```
